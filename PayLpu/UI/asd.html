@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="asdjs.js"></script>
+<h2 id="demo"></h2>
+<span id="result"></span>
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+<script>
+	document.getElementbyId("result").innerHTML=localStorage.getItem("val");
+</script>
+</body>
+</html>

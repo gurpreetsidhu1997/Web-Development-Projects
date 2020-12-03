@@ -1,0 +1,151 @@
+
+<html>
+<head>
+ <title>PAY LPU</title>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<style type="text/css">
+  .wrap{
+    max-width: 350px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    margin-top: 100px;
+    border-radius: 20px;
+  }
+  form{
+    margin-top: 50px;
+  }
+  input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px; 
+    border: none;
+    outline: none;
+    border:1px solid gray;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  h2
+  {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+  }
+  input[type=submit]
+  {
+    font-size: 16px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: bold;
+    background: #cc0033;
+    border:1px solid #fff;
+    cursor: pointer;
+  }
+
+  .openbtn
+  {
+    background: #f1f1f1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    float: right;
+  }
+  .openbtn:hover
+  {
+    background: #bbb;
+  }
+
+  .overlay
+  {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.7);
+  }
+
+  .closebtn
+  {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size:60px;
+    cursor: pointer;
+    color: #fff; 
+  }
+  .closebtn:hover
+  {
+    color: #ccc;
+  }
+</style>
+</head>
+<body>
+<div id="overlay" class="overlay">
+    <span class="closebtn" onclick="closeForm()" title="Close Overlay"> &#215</span>
+    <div class="wrap">
+      <h1>Sign Up</h1>
+      <form>
+        <input type="text" placeholder="Enter Name">
+        <input type="text" placeholder="Mobile No.">
+        <input type="text"  placeholder="Email">
+        <input type="password"  placeholder="Password" >
+        <input type="submit" value="Join Now">
+      </form>
+    </div>
+</div>
+
+<script>
+   function openForm()
+   {
+   document.getElementById("overlay").style.display="block";
+
+   } 
+ </script>
+ <script>
+  function closeForm()
+   {
+    document.getElementById("overlay").style.display="none";
+
+   } 
+ </script>
+
+<header class="site-header clearfix">
+ <nav>
+  <div class="logo">
+   <h1>PAY LPU</h1>
+  </div>
+  <div class="menu">
+   <ul>
+    <li>ACADEMIC</li>
+    <li>FOOD COURT</li>
+    <li><button class="openbtn"  onclick="openForm()">signup</button></li>
+    <li>HELP</li>
+    <i class="fa fa-search"></i>
+
+   </ul>
+  </div>
+ </nav>
+ <section>
+  <div class="leftside">
+  <img src="img.png">
+  </div>
+  <div class="rightside">
+   <h1>WELCOME VERTO's</h1>
+
+   <button type="button" onclick="alert('PLEASE SIGN UP TO CONTINUE')">WELCOME</button>
+  </div>
+ 
+ </section>
+
+</header>
+
+</body>
+</html>
